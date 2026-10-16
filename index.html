@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050505">
+<title>Happy Birthday Amit 🎂</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+<audio id="music" src="public/songs/amit-bday.mp3" loop></audio>
+<button id="musicBtn" class="music-btn">▶</button>
+<canvas id="confetti"></canvas>
+<main>
+<section class="page active" id="pinPage">
+<div class="lock-card"><div class="crown">♛</div><p class="eyebrow">Only for you</p>
+<h1>Only for <span class="gold">Amit</span></h1><p class="muted">Something small from your friends.</p>
+<form id="pinForm"><label for="pin">Enter the 4-digit PIN</label>
+<input id="pin" type="password" inputmode="numeric" maxlength="4" placeholder="••••" required>
+<p class="hint">Hint: 0701</p><p id="pinError" class="error"></p>
+<button class="primary full" type="submit">Open the surprise →</button></form></div></section>
+
+<section class="page" id="homePage"><div class="content hero">
+<p class="eyebrow">18 October · Your day</p><h1 class="hero-title">Happy Birthday<br><span class="gold">Amit Gupta</span> 🎂</h1>
+<p class="muted">One year older, ten times hotter.</p>
+<div class="countdown"><div><strong id="days">00</strong><span>Days</span></div><div><strong id="hours">00</strong><span>Hours</span></div><div><strong id="minutes">00</strong><span>Minutes</span></div><div><strong id="seconds">00</strong><span>Seconds</span></div></div>
+<p class="muted">We made this just for you.</p>
+<div class="navigation"><button class="secondary" data-prev>← Back</button><button class="primary" data-next>Let's go →</button></div></div></section>
+
+<section class="page" id="photosPage"><div class="content">
+<p class="eyebrow">The good times</p><h2>Memory Lane 📸</h2><p class="muted">Nine photos. Same chill guy.</p>
+<div class="gallery">
+<button class="photo" data-photo="0"><img src="public/photos/amit1.jpg" alt="Amit 1"></button>
+<button class="photo" data-photo="1"><img src="public/photos/amit2.jpg" alt="Amit 2"></button>
+<button class="photo" data-photo="2"><img src="public/photos/amit3.jpg" alt="Amit 3"></button>
+<button class="photo" data-photo="3"><img src="public/photos/amit4.jpg" alt="Amit 4"></button>
+<button class="photo" data-photo="4"><img src="public/photos/amit5.jpg" alt="Amit 5"></button>
+<button class="photo" data-photo="5"><img src="public/photos/amit6.jpg" alt="Amit 6"></button>
+<button class="photo" data-photo="6"><img src="public/photos/amit7.jpg" alt="Amit 7"></button>
+<button class="photo" data-photo="7"><img src="public/photos/amit8.jpg" alt="Amit 8"></button>
+<button class="photo" data-photo="8"><img src="public/photos/amit9.jpg" alt="Amit 9"></button>
+</div><div class="navigation"><button class="secondary" data-prev>← Back</button><button class="primary" data-next>Next →</button></div></div></section>
+
+<section class="page" id="factsPage"><div class="content">
+<p class="eyebrow">Things about Amit</p><h2>Our Guy 🧠</h2>
+<article class="card"><h3>Full Attitude</h3><p>He doesn't chase anyone. No love scene, no fake talk. He has his own vibe. If he doesn't like something, he just says it. That's his attitude and we like it.</p></article>
+<article class="card"><h3>Lazy + Always on Phone</h3><p>Morning to night, phone is always in his hand. You tell him to do something, he says "rahe de". He can be lazy all day and still be chill about it. That's a talent.</p></article>
+<article class="card"><h3>Loves Other People's Jokes 😂</h3><p>He may not crack jokes all the time, but when someone says something funny, he laughs the loudest. He enjoys the scene, sits back, and has a good time. The best audience you can get.</p></article>
+<div class="navigation"><button class="secondary" data-prev>← Back</button><button class="primary" data-next>Meet the squad →</button></div></div></section>
+
+<section class="page" id="friendsPage"><div class="content">
+<p class="eyebrow">Four messages, one birthday</p><h2>Wishes from the Squad 💌</h2>
+<article class="card"><h3>Prakash</h3><p>You don't talk much about love and all that drama, you just stay chill. That's what makes you different. Happy Birthday bro.</p></article>
+<article class="card"><h3>Arjun</h3><p>You are lazy, you are always on your phone, but when someone cracks a joke, you are the first one to laugh. Stay like this.</p></article>
+<article class="card"><h3>Bir</h3><p>Full attitude but good heart. You don't get into all that love stuff, you just do your own thing. Respect for that.</p></article>
+<article class="card"><h3>Kaleyy</h3><p>The guy who is always on mobile and always ready to laugh. Happy Birthday Amit!</p></article>
+<div class="navigation"><button class="secondary" data-prev>← Back</button><button class="primary" data-next>One letter for you →</button></div></div></section>
+
+<section class="page" id="letterPage"><div class="content">
+<p class="eyebrow">From your friends</p><h2>A Letter for You 💌</h2><p class="muted">Tap the envelope to open.</p>
+<button class="envelope" id="envelope"><span class="flap"></span><span class="heart">♥</span><span class="envelope-label">For Amit</span></button>
+<article class="letter" id="letter"><p class="letter-date">18 October</p>
+<div id="typedMessage">One year older, ten times hotter..
+May all your delulu come trululu..
+Have a purrfect  birthday..
+A million extra wishes to you!..
+You are a limited edition with unlimited potential..
+You are flippin' awesome..
+Wishing you a rizzful year ahead..
+Roses are red, skies are blue.. I just wanna say Happy Birthday to you <3...
+Hope your birthday lights up with dreams and stars...</div>
+<p class="signature" id="signature"></p></article>
+<div class="navigation"><button class="secondary" data-prev>← Back</button><button class="primary" data-next>Keep going →</button></div></div></section>
+
+<section class="page" id="funPage"><div class="content">
+<p class="eyebrow">Just for fun</p><h2>Open Your Gifts 🎁</h2>
+<div class="gift-grid">
+<button class="card gift"><span>🎁</span><strong>Gift 1</strong><p>You are a limited edition with unlimited potential.</p></button>
+<button class="card gift"><span>🎁</span><strong>Gift 2</strong><p>Have a purrfect birthday.</p></button>
+<button class="card gift"><span>🎁</span><strong>Gift 3</strong><p>You are flippin' awesome.</p></button>
+<button class="card gift"><span>🎁</span><strong>Gift 4</strong><p>Wishing you a rizzful year ahead.</p></button>
+</div>
+<h2 class="quiz-heading">How Well Do You Know Amit? 🧠</h2>
+<div id="quiz">
+<article class="question" data-answer="1"><h3>1. What does he do all day?</h3><button data-choice="0">Study</button><button data-choice="1">Use his mobile</button><button data-choice="2">Sleep only</button></article>
+<article class="question" data-answer="2"><h3>2. What makes him laugh the most?</h3><button data-choice="0">His own jokes</button><button data-choice="1">Movies</button><button data-choice="2">Other people's jokes</button></article>
+<article class="question" data-answer="1"><h3>3. Love interest?</h3><button data-choice="0">Full interested</button><button data-choice="1">Not interested at all</button><button data-choice="2">Sometimes</button></article>
+<article class="question" data-answer="1"><h3>4. His catchphrase?</h3><button data-choice="0">Let's go</button><button data-choice="1">Rahe de</button><button data-choice="2">Chill</button></article>
+<article class="question" data-answer="0"><h3>5. His vibe?</h3><button data-choice="0">Full attitude, chill guy</button><button data-choice="1">Very talkative</button><button data-choice="2">Always serious</button></article>
+</div><p id="quizResult" class="gold"></p>
+<div class="navigation"><button class="secondary" data-prev>← Back</button><button class="primary" data-next>Final page →</button></div></div></section>
+
+<section class="page" id="cakePage"><div class="content final">
+<p class="eyebrow">THE MOMENT WE'VE BEEN WAITING FOR</p><h2>Make a Wish, Amit 🎂</h2>
+<div id="cakeTutorial" class="cake-tutorial">👆 Tap candles to blow them!</div>
+<p class="muted hidden" id="cakeHint">Swipe on cake to cut it →</p>
+<div id="cakeContainer" class="cake-container">
+<div id="realCake" class="real-cake">
+<div class="candle" data-candle="0"><span class="flame"></span></div>
+<div class="candle c2" data-candle="1"><span class="flame"></span></div>
+<div class="candle c3" data-candle="2"><span class="flame"></span></div>
+<div class="cake-top"></div><div class="cake-middle"></div><div class="cake-bottom"></div><div class="plate"></div>
+<div id="cutLine" class="cut-line"></div><div id="knife" class="knife">🔪</div>
+</div>
+<div id="cakeSlices" class="cake-slices hidden"><div class="slice left"></div><div class="slice right"></div></div>
+</div>
+<h3 id="cakeMessage" class="gold"></h3>
+
+<div id="cakePopup" class="cake-popup hidden">
+<div class="cake-popup-card"><div class="popup-icon">🎉</div>
+<h3>Happy Birthday, Amit!</h3>
+<p>You are a limited edition with unlimited potential. You are flippin' awesome.</p>
+<p>One year older, ten times hotter. Have a purrfect year ahead.</p>
+<strong>💛 — Prakash, Arjun, Bir and Kaleyy</strong>
+<button id="closePopup" class="primary full" style="margin-top:16px">Continue →</button>
+</div></div>
+
+<article id="wishBox" class="card wish-box-premium hidden">
+<div class="wish-header"><span class="wish-icon">💌</span><h3>Send a Wish to Amit</h3><p>No redirect, direct to email</p></div>
+<form id="wishForm">
+<input type="text" id="wishName" placeholder="Your Name" required class="wish-input-premium">
+<textarea id="wishMsg" placeholder="Write your birthday wish for Amit..." required rows="4" class="wish-input-premium"></textarea>
+<button type="submit" class="primary full"><span>Send Wish ✨</span></button>
+<p id="wishStatus" class="wish-status"></p>
+</form>
+</article>
+
+<div class="navigation"><button class="secondary" data-prev>← Back</button><button class="primary" id="restart">Start again ↻</button></div>
+<p class="footer"> ♥ </p>
+</div></section>
+</main>
+<div class="lightbox" id="lightbox">
+<button id="closeLightbox" class="close-lightbox">×</button><button id="previousPhoto" class="photo-arrow">‹</button>
+<img id="largePhoto" src="public/photos/amit1.jpg" alt="Amit memory">
+<button id="nextPhoto" class="photo-arrow">›</button><span id="photoCount">1 / 9</span>
+</div>
+</body>
+</html>
